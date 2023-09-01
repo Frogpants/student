@@ -4,7 +4,7 @@ comments: false
 hide: true
 layout: post
 type: help
-title: GitHub Overview
+title: GitHub Sync Overview
 ---
 
 ## References
