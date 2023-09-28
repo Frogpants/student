@@ -23,3 +23,5 @@ Throughout my difficulties of setting up, I used multiple commands to try and se
 
 ### Problems
 I had problems with different directories and how to activate different parts of them. The commands listed above are a few of the commands I used to get a step closer to actually coding.
+
+

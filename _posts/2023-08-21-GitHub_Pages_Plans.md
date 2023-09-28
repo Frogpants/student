@@ -2,8 +2,8 @@
 toc: true
 comments: false
 layout: post
-title: Future Plans and Projects
-description: Example Plan!!! Analyze hacks and plan.
+title: Week 1
+description: The future of defining the future to find the future to define the future to use the future to then get more future to plan for the future to then set a goal for the future...
 type: plans
 courses: { compsci: {week: 1} }
 ---

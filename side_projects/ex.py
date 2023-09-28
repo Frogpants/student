@@ -3,7 +3,7 @@ import turtle as tr
 import math as m
 import random as r
 
-tr.tracer(1)
+tr.tracer(0)
 tr.hideturtle()
 
 def shoot(x,y,z,xdir,ydir,zdir):

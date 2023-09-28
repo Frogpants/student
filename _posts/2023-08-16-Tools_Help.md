@@ -3,8 +3,8 @@ toc: false
 comments: false
 hide: true
 layout: post
-type: help
-title: Tool References
+type: hacks
+title: Foundation of Coding
 ---
 
 ### `Visual Studio Code` [Overview](https://code.visualstudio.com/docs/introvideos/basics)

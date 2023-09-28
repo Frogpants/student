@@ -1,10 +1,10 @@
 ---
 toc: true
 comments: false
-hide: true
+hide: false
 layout: post
-type: help
-title: GitHub Sync Overview
+type: hacks
+title: Refrences and Helpful Tips
 ---
 
 ## References

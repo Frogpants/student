@@ -2,14 +2,14 @@
 toc: true
 comments: true
 layout: post
-title: Tools Setup
-description: Example hacks!!! This shows procedures performed by student, not the procedures for the entire class.  Modified or prunned for specific machine.
+title: Hacks and Tools
+description: Hacks that I've learned over the course of a month!
 courses: { compsci: {week: 0} }
 type: hacks
 ---
 
 ## Hacks
-> Complete the procedure below accurately.  These are absolutely required and must be 100% accurate for your success.
+>Hacks were small little tips that had a big impact on my code and building of my blog and changing pieces of large scripts. Hacks were also related to my grade in the class and how I would go about getting the grade I wanted
 
 ### GitHub Account
 - Follow instruction [https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account](https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account)  Use your own personal/permanent email... NOT SCHOOL!!! GitHub account belongs to you.
