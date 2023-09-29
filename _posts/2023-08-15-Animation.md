@@ -1,6 +1,6 @@
 ---
 toc: false
-comments: false
+comments: true
 layout: post
 title: Animation Examples
 description: Demonstrations of multiple different custom animations for a horror game

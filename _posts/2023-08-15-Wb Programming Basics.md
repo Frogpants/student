@@ -1,10 +1,10 @@
 ---
 toc: false
-comments: false
+comments: true
 layout: post
 title: Web Programming Basics
 description: The basics of web programing (Mind Blown)
-type: tangibles
+type: hacks
 courses: { compsci: {week: 5} }
 ---
 
@@ -30,6 +30,36 @@ courses: { compsci: {week: 5} }
 
 <!DOCTYPE html>
 <html lang="en">
+%%html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .div1 {
+            border: none;
+            background-color: white;
+            text-align: left;
+            color: black;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-bottom: 10px;
+        }
+
+        .div2 {
+            border: 5px outset blue;
+            background-color: white;
+            text-align: left;
+            color: black;
+            padding-top: 15px;
+            padding-bottom: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    </style>
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,7 +76,19 @@ courses: { compsci: {week: 5} }
     <textarea id="editor">console.log("Hello, World!");</textarea>
     <button onclick="runCode()">Run</button>
     <h2>Output:</h2>
-    <div id="output"></div>
+    <div id="output">
+    
+        <p id="toggleParagraph">Click this button to toggle visibility</p>
+        <button onclick="toggleVisibility()">This is a button</button>
+
+        <a target="_blank" href="https://frogpants.github.io/student/">Link to Spencer's page</a><br>
+        <a target="_blank" href="https://seannakagawa.github.io/student/">Link to Sean's page</a><br>
+        <a target="_blank" href="https://github.com/Trystan-Schmits/Student1">Link to Trystan's page</a><br>
+        <a target="_blank" href="https://zafeera123.github.io/ZafeerA123/">Link to Zafeer's page</a><br>
+        <a target="_blank" href="INPUT GAME LINK">Link to our game</a>
+        <p>The name of our game is...</p>
+    
+    </div>
 
     <script>
         function runCode() {
@@ -61,6 +103,15 @@ courses: { compsci: {week: 5} }
                 outputDiv.innerHTML = "<pre style='color: red;'>" + error + "</pre>";
             }
         }
+
+        function toggleVisibility() {
+            // Get the paragraph element
+            var paragraph = document.getElementById('toggleParagraph');
+
+            // Toggle visibility
+            paragraph.style.display = (paragraph.style.display === 'none') ? 'block' : 'none';
+        }
+
     </script>
 </body>
 </html>
