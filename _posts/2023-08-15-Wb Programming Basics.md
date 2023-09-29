@@ -27,3 +27,40 @@ courses: { compsci: {week: 5} }
 # Seeing javascript console output in visual studio
 - When printing outputs from javascript to the console you will need to open the developer console
 - Go to Help->Toggle Developer Tools and click console on the top bar of the developer window
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Code Editor</title>
+    <style>
+        #editor {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Code Editor</h1>
+    <textarea id="editor">console.log("Hello, World!");</textarea>
+    <button onclick="runCode()">Run</button>
+    <h2>Output:</h2>
+    <div id="output"></div>
+
+    <script>
+        function runCode() {
+            const code = document.getElementById("editor").value;
+            const outputDiv = document.getElementById("output");
+
+            try {
+                // Execute the JavaScript code
+                const result = eval(code);
+                outputDiv.innerHTML = "<pre>" + result + "</pre>";
+            } catch (error) {
+                outputDiv.innerHTML = "<pre style='color: red;'>" + error + "</pre>";
+            }
+        }
+    </script>
+</body>
+</html>
