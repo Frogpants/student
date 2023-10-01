@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Student Blog
-
+permalink: /basics/home
 ---
 
 
