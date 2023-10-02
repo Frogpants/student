@@ -13,7 +13,7 @@ courses: { compsci: {week: 5} }
 <body>
     <div>
         <canvas id="spriteContainer"> <!-- Within the base div is a canvas. An HTML canvas is used only for graphics. It allows the user to access some basic functions related to the image created on the canvas (including animation) -->
-            <img id="dogSprite" src="/student/images/pixilart-drawing (14).png">  // change sprite here
+            <img id="dogSprite" src="/student/images/pixil-frame-0 (6).png">  // change sprite here
         </canvas>
         <div id="controls"> <!--basic radio buttons which can be used to check whether each individual animaiton works -->
             <input type="radio" name="animation" id="idle" checked>
@@ -31,9 +31,9 @@ courses: { compsci: {week: 5} }
     window.addEventListener('load', function () {
         const canvas = document.getElementById('spriteContainer');
         const ctx = canvas.getContext('2d');
-        const SPRITE_WIDTH = 16;  // matches sprite pixel width
-        const SPRITE_HEIGHT = 54; // matches sprite pixel height
-        const FRAME_LIMIT = 1;  // matches number of frames per sprite row, this code assume each row is same
+        const SPRITE_WIDTH = 20;  // matches sprite pixel width
+        const SPRITE_HEIGHT = 20; // matches sprite pixel height
+        const FRAME_LIMIT = 9;  // matches number of frames per sprite row, this code assume each row is same
 
         const SCALE_FACTOR = 5;  // control size of sprite on canvas
         canvas.width = SPRITE_WIDTH * SCALE_FACTOR;
@@ -42,7 +42,7 @@ courses: { compsci: {week: 5} }
         class Dog {
             constructor() {
                 this.image = document.getElementById("dogSprite");
-                this.x = -16;
+                this.x = 0;
                 this.y = 0;
                 this.minFrame = 0;
                 this.maxFrame = FRAME_LIMIT;
@@ -99,14 +99,9 @@ courses: { compsci: {week: 5} }
             }
         });
 
-        let intervalId = setInterval(function() {
-            // Code to be executed at the specified interval
-            console.log("Interval code executed");
-        }, 1000);
 
         // Animation recursive control function
         function animate() {
-            setInterval(1)
             // Clears the canvas to remove the previous frame.
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
