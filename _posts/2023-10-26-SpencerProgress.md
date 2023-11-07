@@ -9,7 +9,8 @@ permalink: /tangibles/Spencer
 ---
 
 # Introduction
-- Art 
+
+## Art 
 I drew many things included in the game, such as the player spritesheet, main bedroom, and the main menu. Throughout the designing, we changed different styles and other parts to fit within our game. The art I made was mainly made for refrence and I think the end result was better than I could make. Some art I made that was in the game is below.
 
 ![Main Player Character](/student/images/walking-sprite2.png)
@@ -20,10 +21,11 @@ I drew many things included in the game, such as the player spritesheet, main be
 
 The above are just some of the more obvious ones you see first hand in the game, but i also did all the minigame art and more.
 
-- Code 
+## Code 
 I worked on OOP, the computer in the first minigame, the player, scrolling, and the monster interaction. I also made a refrence for how the game is supposed to look like. I then introduced audio and enviroment ambience. I did more such as the main menu and text engine. When coding, I found it vary useful to use objects. This is because it was like a storage of values of an image that we can manipulate without an excess of global variables.
 
-- Objects 
+## Objects
+
 ```
 const object = {
     x: 0,
@@ -38,6 +40,7 @@ This line of code creates the new image then defines what the image is from our 
 After this, it is named and the size can be set. It first asks for the size of the image file, then the size we want to draw it, then the placement in the game.
 
 Objects can also be used for other things, such as player, text, or buttons. In the example below, we have an example of a text object that can be used and changed in the canvas.
+
 ```
 const text = {
     x: 0,
@@ -54,6 +57,7 @@ ctx.fillText(text.txt,text.x,text.y);
 This text is defined in an object, and then can be drawn on the canvas. The text's peramerters are defined by the object variables of font, x, y, and spacing.
 
 We can then add a custom text function to control even more of it.
+
 ```
 function text(x,y,space,cutx,text) {
     var words = text.split(" ");
@@ -70,10 +74,21 @@ function text(x,y,space,cutx,text) {
     }
 };
 ```
-The function above allows for cutoff of the text at a certain x on the canvas that prevents the text from moving past that x. When the function detects a word that is past the text, then it resets the text to the original starting x and changes the y of the text down by the spacing/font size.
+The function above allows for cutoff of the text at a certain x on the canvas that prevents the text from moving past that x. When the function detects a word that is past the text, then it resets the text to the original starting x and changes the y of the text down by the spacing/font size. Below are some of the tests/examples of what I developed for the game.
 
-- Movement 
+[End Credits](/student//c4.1/2023/10/27/SimpilfiedEndCredits.html)
+
+[Bird Game In Computer](/student//c4.1/2023/10/25/birdgame.html)
+
+[Computer Minigame](/student//c4.1/2023/11/01/MinigameComputer.html)
+
+[Text Engine](/student//c4.1/2023/10/23/textEngine.html)
+
+[Object Demnstration](/student//plans/monster_smash)
+
+## Movement 
 The original design for movement was slow and weird. So I designed a new one that uses a velocity of the player that changes its position rather than moving it by the position. This allowed for a more dynamic movment and friction.
+
 ```
 // Determine which keys mean what
 up = "KeyW"; 
@@ -117,7 +132,7 @@ function checkCollide(x, y, width, height) {
 ```
 The code above uses the distance of the objects and detects when there is an overlap between two objects. When combining movement and collision, we can make a working game.
 
-# More Drawings
+## More Drawings
 
 ![Menu Layer 1](/student/images/menu_tree.png)
 
@@ -133,4 +148,4 @@ Over the course of the trimester, I feel I have really grown and matured. I've g
 
 Apart from teamwork, I feel I have been able to use my creativity with my coding, such as: creating a compact collision code, main menu, creating a story that's interesting, and much more.
 
-In my group, my job was scrum leader. I, for the most part, dictated what our goal was and what the next steps should be. Our group would probably have spent more time on what to make rather than making a game if it wasn't for me.
+In my group, my job was scrum leader. I, for the most part, dictated what our goal was and what the next steps should be. Our group would probably have spent more time on what to make rather than making a game if it wasn't for me. But I think my group also put in a lot of commitment and I appreciate them for that. Lastly, I think I could use some of my new skills in coding to create something that is far more advanced compared to our pretty advanced game, I just wish I had more time.
