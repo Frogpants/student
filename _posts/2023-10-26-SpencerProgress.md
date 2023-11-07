@@ -86,6 +86,8 @@ The function above allows for cutoff of the text at a certain x on the canvas th
 
 [Object Demnstration](/student//plans/monster_smash)
 
+[Game Story](/student//plans/Game_Project_Plan)
+
 ## Movement 
 The original design for movement was slow and weird. So I designed a new one that uses a velocity of the player that changes its position rather than moving it by the position. This allowed for a more dynamic movment and friction.
 
